@@ -3,7 +3,7 @@
 <GroundOverlay>
 	<name>map</name>
 	<Icon>
-		<href>http://hailin-wh.com/uploads/allimg/161222/0501044K9-0.png</href>
+		<href>../0501044K9-0.png</href>
 		<viewBoundScale>0.75</viewBoundScale>
 	</Icon>
 	<LatLonBox>
