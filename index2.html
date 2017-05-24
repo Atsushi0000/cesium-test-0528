@@ -4,9 +4,9 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-	<meta name="description" content="Cesiumを使った日野市オープンデータ可視化のサンプルです" />
+	<meta name="description" content="Cesiumを使った「新世紀エヴァンゲリオン」の世界線" />
 	<meta property="og:image" content="data/hinoshi.png" />
-	<meta property="og:description" content="Cesiumを使った日野市オープンデータ可視化のサンプルです" />
+	<meta property="og:description" content="Cesiumを使った「新世紀エヴァンゲリオン」の世界線" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 	<title>日野市オープンデータ可視化</title>
 	<link rel="alternate" href="http://hiroshima.archiving.jp/index_en.html" hreflang="en" />
@@ -93,10 +93,17 @@
 		// ========== ビューア初期化 ==========
 
 		var viewer = new Cesium.Viewer('cesiumContainer', {
-			imageryProvider: new Cesium.ArcGisMapServerImageryProvider({
+			/*imageryProvider: new Cesium.ArcGisMapServerImageryProvider({
 				url: '//server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer',
 				enablePickFeatures: false
-			}),
+			}),*/
+
+			imageryProvider: Cesium.createTileMapServiceImageryProvider({
+        url: 'https://cesiumjs.org/blackmarble',
+        credit: 'Black Marble imagery courtesy NASA Earth Observatory',
+        flipXY: true
+      }),
+
 			navigationHelpButton: false,
 			navigationInstructionsInitiallyVisible: false,
 			geocoder: false,
