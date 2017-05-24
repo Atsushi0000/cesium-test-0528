@@ -93,16 +93,15 @@
 		// ========== ビューア初期化 ==========
 
 		var viewer = new Cesium.Viewer('cesiumContainer', {
-			/*imageryProvider: new Cesium.ArcGisMapServerImageryProvider({
+			imageryProvider: new Cesium.ArcGisMapServerImageryProvider({
 				url: '//server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer',
 				enablePickFeatures: false
-			}),*/
+			}),
 
-			imageryProvider: Cesium.createTileMapServiceImageryProvider({
-        url: 'https://cesiumjs.org/blackmarble',
-        credit: 'Black Marble imagery courtesy NASA Earth Observatory',
-        flipXY: true
-      }),
+			/*imageryProvider: new Cesium.createOpenStreetMapImageryProvider({
+				url: 'http://cyberjapandata.gsi.go.jp/xyz/english/',
+				credit: '地理院地図'
+			}),*/
 
 			navigationHelpButton: false,
 			navigationInstructionsInitiallyVisible: false,
@@ -126,7 +125,7 @@
 		var cesiumTerrainProviderMeshes = new Cesium.CesiumTerrainProvider({
 			url: '//assets.agi.com/stk-terrain/world',
 			//海を表示しないときは以下をfalseに
-			requestWaterMask: false,
+			requestWaterMask: true,
 			requestVertexNormals: true
 		});
 		viewer.terrainProvider = cesiumTerrainProviderMeshes;
@@ -295,11 +294,11 @@
 
 			//OSMの明度を下げる
 
-			openStreetMap.brightness = 0.7;
+			openStreetMap.brightness = 0.2;
 
 			//OSMの不透明度をデフォルト0に
 
-			openStreetMap.alpha = 0;
+			openStreetMap.alpha = 5;
 
 			//オーバーレイ配列を作成
 
@@ -309,7 +308,7 @@
 				this.overlayObj = _overlayObj;
 				this.id = _id;
 			}
-			overlayDataArray[0] = new overlayData("現在の地図", 0, openStreetMap, "range01");
+			overlayDataArray[0] = new overlayData("現在の地図", 100, openStreetMap, "range01");
 
 			//オーバレイメニューを作成
 
