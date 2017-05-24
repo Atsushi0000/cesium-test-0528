@@ -107,7 +107,7 @@
 			baseLayerPicker: false,
 			scene3DOnly: true,
 			//地形を強調する際は値を変更
-			terrainExaggeration: 1.0
+			terrainExaggeration: 0.0
 		});
 
 		//ダブルクリック操作を付加
@@ -119,7 +119,7 @@
 		var cesiumTerrainProviderMeshes = new Cesium.CesiumTerrainProvider({
 			url: '//assets.agi.com/stk-terrain/world',
 			//海を表示しないときは以下をfalseに
-			requestWaterMask: true,
+			requestWaterMask: false,
 			requestVertexNormals: true
 		});
 		viewer.terrainProvider = cesiumTerrainProviderMeshes;
@@ -147,9 +147,9 @@
 
 		//視点を登録：　緯度，経度，注視点の高さ，傾き，視点の高さ
 
-		viewPointsArray[0] = new viewPoints("旧東京都", 35.661, 139.3657347, 0, -45, 1000);
+		viewPointsArray[0] = new viewPoints("旧東京都", 35.661, 139.3657347, 0, -45, 10000);
 		viewPointsArray[1] = new viewPoints("第３新東京市俯瞰", 35.250, 138.994, 0, -89, 18000);
-		viewPointsArray[2] = new viewPoints("第3新東京市", 35.260, 138.990, 0, -30, 10000);
+		viewPointsArray[2] = new viewPoints("第3新東京市", 35.260, 138.992, 0, -30, 10000);
 
 		//視点メニューを作成
 

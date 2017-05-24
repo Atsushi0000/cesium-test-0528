@@ -2,26 +2,6 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>特務機関NERV本部.kml</name>
-	<Style id="s_ylw-pushpin_hl">
-		<IconStyle>
-			<color>cc0900fc</color>
-			<scale>1.65455</scale>
-			<Icon>
-				<href>../レイヤー 0.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<LabelStyle>
-			<color>ff0400bb</color>
-			<scale>1.4</scale>
-		</LabelStyle>
-		<ListStyle>
-		</ListStyle>
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.5</width>
-		</LineStyle>
-	</Style>
 	<StyleMap id="m_ylw-pushpin">
 		<Pair>
 			<key>normal</key>
@@ -45,8 +25,24 @@
 			<color>ff0400bb</color>
 			<scale>1.4</scale>
 		</LabelStyle>
-		<ListStyle>
-		</ListStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.5</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<color>cc0900fc</color>
+			<scale>1.65455</scale>
+			<Icon>
+				<href>../レイヤー 0.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0400bb</color>
+			<scale>1.4</scale>
+		</LabelStyle>
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.5</width>
@@ -56,14 +52,12 @@
 		<name>特務機関NERV本部</name>
 		<description><![CDATA[正式名称は国際連合直属非公開組織 特務機関NERV。2010年に設立された、使徒殲滅を主要任務とする国連直属の超法規的組織。ドイツ語で神経の意味。本部の所在は日本国の芦ノ湖北湖畔の第3新東京市の地下、箱根大深度地下大規模空間（ジオフロント内）にある。<img src="http://blog-img.esuteru.com/image/article/201505/c4297d1d98491c308b1bfa4d20ab4563.jpg">]]></description>
 		<LookAt>
-			<gx:TimeStamp><when>2016</when>
-</gx:TimeStamp>
-			<longitude>138.9887105660439</longitude>
-			<latitude>35.25103517318249</latitude>
+			<longitude>138.9923780035756</longitude>
+			<latitude>35.25567432040489</latitude>
 			<altitude>0</altitude>
-			<heading>-154.6899581802496</heading>
-			<tilt>43.99195115531345</tilt>
-			<range>1967.375293864135</range>
+			<heading>0.1700207095683059</heading>
+			<tilt>24.89163102305616</tilt>
+			<range>4819.719714131134</range>
 			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 		</LookAt>
 		<styleUrl>#m_ylw-pushpin</styleUrl>
@@ -71,7 +65,7 @@
 			<extrude>1</extrude>
 			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			<gx:drawOrder>1</gx:drawOrder>
-			<coordinates>138.9892529464538,35.25509255598459,684</coordinates>
+			<coordinates>138.9929559782802,35.25453497249902,684</coordinates>
 		</Point>
 	</Placemark>
 </Document>

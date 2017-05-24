@@ -119,7 +119,7 @@
 		var cesiumTerrainProviderMeshes = new Cesium.CesiumTerrainProvider({
 			url: '//assets.agi.com/stk-terrain/world',
 			//海を表示しないときは以下をfalseに
-			requestWaterMask: true,
+			requestWaterMask: false,
 			requestVertexNormals: true
 		});
 		viewer.terrainProvider = cesiumTerrainProviderMeshes;
@@ -147,9 +147,10 @@
 
 		//視点を登録：　緯度，経度，注視点の高さ，傾き，視点の高さ
 
-		viewPointsArray[0] = new viewPoints("旧東京都", 35.661, 139.3657347, 0, -45, 1000);
+		viewPointsArray[0] = new viewPoints("旧東京都", 35.661, 139.3657347, 0, -45, 10000);
 		viewPointsArray[1] = new viewPoints("第３新東京市俯瞰", 35.250, 138.994, 0, -89, 18000);
-		viewPointsArray[2] = new viewPoints("第3新東京市", 35.255, 138.990, 0, -30, 3500);
+		viewPointsArray[2] = new viewPoints("ジオフロント", 35.246, 138.994, 0, -30, 8000);
+		viewPointsArray[3] = new viewPoints("特務機関NERV", 35.255, 138.992, 0, -30, 1000);
 
 		//視点メニューを作成
 
@@ -234,7 +235,7 @@
 		var kmlDataArray = [];
 		//KMLデータを登録．kmzでもOK
 		kmlDataArray[0] = new kmlData("特務機関NERV本部", 'data/kml/特務機関NERV本部.kml');
-		kmlDataArray[1] = new kmlData("避難場所", 'data/kml/hinanbasyo.kml');
+		kmlDataArray[1] = new kmlData("ジオフロント", 'data/kml/ジオフロント.kml');
 		//時間情報入りのKML
 		//kmlDataArray[2] = new kmlData("タイムスパン", 'data/kml/timeSpans.kml');
 
