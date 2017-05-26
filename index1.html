@@ -102,7 +102,7 @@
 			geocoder: false,
 			//時間を使うときは以下の二行をコメントアウト
 			//timeline: false,
-			animation: false,
+			//animation: false,
 			sceneModePicker: false,
 			baseLayerPicker: false,
 			scene3DOnly: true,
@@ -119,7 +119,7 @@
 		var cesiumTerrainProviderMeshes = new Cesium.CesiumTerrainProvider({
 			url: '//assets.agi.com/stk-terrain/world',
 			//海を表示しないときは以下をfalseに
-			requestWaterMask: false,
+			requestWaterMask: true,
 			requestVertexNormals: true
 		});
 		viewer.terrainProvider = cesiumTerrainProviderMeshes;
