@@ -17,13 +17,14 @@ h2 {
 }
 
 a {
-    color: black;
+    color: #00B8CC;
     text-decoration: none;
 }
 
 a:hover {
     color: white;
-    background: gray;
+    /*background: #D52E31;
+    */
 }
 
 
@@ -43,7 +44,7 @@ a:hover {
     padding: 0px;
     margin: 0px;
     z-index: 10001;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 100);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
@@ -62,7 +63,7 @@ a:hover {
     padding: 5px 24px;
     overflow: hidden;
     color: #000;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 button.cesium-infoBox-close {
@@ -306,8 +307,8 @@ input {
 
 #osmCredit {
     position: absolute;
-    bottom: 2px;
-    left: 2px;
+    top: 2px;
+    left: 50px;
     font-size: 8px;
     z-index: 20000;
     margin: 0;
