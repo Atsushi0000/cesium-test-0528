@@ -38,14 +38,14 @@
 }
 
 .cesium-animation-svgText {
-    fill: #edffff;
+    fill: #c40000;
     font-family: Sans-Serif;
     font-size: 15px;
     text-anchor: middle;
 }
 
 .cesium-animation-blank {
-    fill: #000;
+    fill: none;
     fill-opacity: 0.01; /* This must be clickable, so it can't be 'fill: none'. */
     stroke: none;
 }
@@ -59,7 +59,7 @@
 }
 
 .cesium-animation-rectButton .cesium-animation-buttonGlow {
-    fill: #fff;
+    fill: #c40000;
     stroke: none;
     /* Widget will add: filter: url(#animation_blurred); */
     display: none;
@@ -70,22 +70,22 @@
 }
 
 .cesium-animation-rectButton .cesium-animation-buttonPath {
-    fill: #edffff;
+    fill: #c40000;
 }
 
 .cesium-animation-rectButton .cesium-animation-buttonMain {
-    /* Widget will add: fill: url(#animation_buttonNormal); */
-    stroke: #444;
+    /* Widget will add:*/ fill: #0c0a0a;
+    stroke: #c40000;
     stroke-width: 1.2;
 }
 
 .cesium-animation-rectButton:hover .cesium-animation-buttonMain {
-    /* Widget will add: fill: url(#animation_buttonHovered); */
-    stroke: #AEF;
+    /* Widget will add: */fill: #333131;
+    stroke: #ef0000;
 }
 
 .cesium-animation-rectButton:active .cesium-animation-buttonMain {
-    fill: #ABD6FF;
+    fill: #444444;
 }
 
 .cesium-animation-buttonDisabled {
@@ -110,42 +110,42 @@
 
 .cesium-animation-buttonToggled .cesium-animation-buttonGlow {
     display: block;
-    fill: #2E2;
+    fill: #c40000;
 }
 
 .cesium-animation-buttonToggled .cesium-animation-buttonMain {
-    stroke: #2E2;
+    stroke: #c40000;
 }
 
 .cesium-animation-buttonToggled:hover .cesium-animation-buttonGlow {
-    fill: #fff;
+    fill: #c40000;
 }
 
 .cesium-animation-buttonToggled:hover .cesium-animation-buttonMain {
-    stroke: #2E2;
+    stroke: #c40000;
 }
 
 .cesium-animation-shuttleRingG {
     cursor: pointer;
 }
 
-/* Widget will add:
+/* Widget will add:*/
 .cesium-animation-shuttleRingG .cesium-animation-shuttleRingSwoosh {
-    fill: url(#animation_shuttleRingSwooshGradient);
+    fill: #c40000;
 }
 
 .cesium-animation-shuttleRingG:hover .cesium-animation-shuttleRingSwoosh {
-    fill: url(#animation_shuttleRingSwooshHovered);
+    fill: #ef0000;
 }
-*/
+
 
 .cesium-animation-shuttleRingPointer {
-    /* Widget will add: fill: url(#animation_shuttleRingPointerGradient); */
+    /* Widget will add: */fill: #ef0000;
     cursor: pointer;
 }
 
 .cesium-animation-shuttleRingPausePointer {
-    /* Widget will add: fill: url(#animation_shuttleRingPointerPaused); */
+    /* Widget will add: */fill: #c40000;
     cursor: pointer;
 }
 
@@ -164,13 +164,15 @@
 }
 
 .cesium-animation-knobOuter {
-    /* Widget will add: fill: url(#animation_knobOuter); */
+    /* Widget will add: */fill: #0c0a0a;
+    fill-opacity: 0.5;
     cursor: pointer;
     stroke: #444;
     stroke-width: 1.2;
 }
 
 .cesium-animation-knobInner {
-    /* Widget will add: fill: url(#animation_knobInner); */
+    /* Widget will add: */fill: #0c0a0a;
+    fill-opacity: 0.5;
     cursor: pointer;
 }

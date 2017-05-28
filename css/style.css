@@ -32,13 +32,14 @@ a:hover {
 /*Cesiumインターフェイス関連*/
 
 .cesium-infoBox-iframe {
-    width: 500px;
+    width: 480px;
     overflow: hidden;
     padding: 0px;
     margin: 0px;
     z-index: 10001;
     background-color: #0c0a0a;
     background: #0c0a0a;
+    color: #0c0a0a;
 }
 
 .cesium-infoBox {
@@ -81,6 +82,11 @@ button.cesium-infoBox-close {
     stroke: #FFF;
     stroke-width: 0px;
     opacity: 0.5;
+}
+
+.cesium-infoBox-bodyless .cesium-infoBox-title {
+  background-color: #0c0a0a;
+  color: #0c0a0a;
 }
 
 
@@ -323,4 +329,12 @@ input {
     z-index: 20000;
     margin: 0;
     padding: 0;
+}
+
+.cesium-timeline-ticLabel{
+    color: #c40000;
+}
+
+.cesium-timeline-ticTiny{
+    color: #c40000;
 }

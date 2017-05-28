@@ -50,6 +50,8 @@
 
 .cesium-infoBox-bodyless .cesium-infoBox-title {
     border-bottom-left-radius: 7px;
+    color: #0c0a0a;
+    background-color: #0c0a0a;
 }
 
 button.cesium-infoBox-camera {
@@ -102,6 +104,9 @@ button.cesium-infoBox-close:active {
 
 .cesium-infoBox-bodyless .cesium-infoBox-iframe {
     display: none;
+    color: #0c0a0a;
+    background-color: #0c0a0a;
+
 }
 
 .cesium-infoBox-iframe {
