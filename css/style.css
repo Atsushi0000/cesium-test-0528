@@ -8,6 +8,8 @@ html, body, #cesiumContainer {
     overflow: hidden;
     position: relative;
     font-family: "MS Pゴシック", sans-serif;
+    color: #c40000;
+    background-color: #0c0a0a;
 }
 
 h2 {
@@ -17,25 +19,26 @@ h2 {
 }
 
 a {
-    color: #00B8CC;
+    color: #c40000;
     text-decoration: none;
 }
 
 a:hover {
-    color: white;
-    /*background: #D52E31;
-    */
+    color: #c40000;
+    background: gray;
 }
 
 
 /*Cesiumインターフェイス関連*/
 
 .cesium-infoBox-iframe {
-    width: 470px;
+    width: 500px;
     overflow: hidden;
     padding: 0px;
     margin: 0px;
     z-index: 10001;
+    background-color: #0c0a0a;
+    background: #0c0a0a;
 }
 
 .cesium-infoBox {
@@ -44,9 +47,11 @@ a:hover {
     padding: 0px;
     margin: 0px;
     z-index: 10001;
-    background-color: rgba(0, 0, 0, 100);
+    background-color: #0c0a0a;
+    color: #c40000;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    background: #0c0a0a;
 }
 
 .cesium-infoBox-visible {
@@ -56,25 +61,26 @@ a:hover {
     margin: 0px;
     z-index: 10001;
     overflow-y: auto;
+    opacity: 1;
     -webkit-overflow-scrolling: touch;
 }
 
 .cesium-infoBox-title {
     padding: 5px 24px;
     overflow: hidden;
-    color: #000;
-    background-color: rgba(0, 0, 0, 0.1);
+    color: #c40000;
+    background-color: #0c0a0a;
 }
 
 button.cesium-infoBox-close {
-    color: #aaa;
+    color: #c40000;
 }
 
 .cesium-selection-wrapper svg {
-    fill: #FFF;
+    fill: #c40000;
     stroke: #FFF;
     stroke-width: 0px;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 
@@ -126,7 +132,7 @@ button.cesium-infoBox-close {
     padding: 0px 0px 20px 0px;
     margin: 0px;
     margin-bottom: 0px;
-    background: white;
+    background: #0c0a0a;
     text-align: center;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -142,7 +148,7 @@ button.cesium-infoBox-close {
     padding: 10px 10px 0px 10px;
     margin: 0px;
     margin-bottom: 0px;
-    background: white;
+    background: #0c0a0a;
     text-align: left;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -157,7 +163,6 @@ button.cesium-infoBox-close {
     list-style-type: none;
     line-height: 1.7em;
     text-indent: 0px;
-    background: white;
 }
 
 .slideLabel {
@@ -165,6 +170,7 @@ button.cesium-infoBox-close {
     margin: 0px 0px 2px 0px;
     padding: 0px;
     height: 12px;
+    color: #c40000;
 }
 
 #slider {
@@ -174,6 +180,7 @@ button.cesium-infoBox-close {
     background: none repeat scroll 0% 0% transparent;
     z-index: 10001;
     right: 98px;
+    background-color: #2ccc00;
 }
 
 
@@ -204,13 +211,14 @@ input {
     margin: 2px 0px 0px 0px;
     padding: 0px;
     width: 100px !important;
+    background: #0c0a0a;
 }
 
 
 /*ジオコーディング*/
 
 .geocode {
-    opacity: 0.7;
+    opacity: 0.5;
     position: absolute;
     top: 18px;
     left: 55px;
@@ -219,11 +227,13 @@ input {
 
 .textbox {
     border: 0;
+    opacity: 1;
     margin: 0px;
     padding: 0px 0px 1px 2px;
     font-size: 12px;
     width: 100px;
     height: 15px;
+    color: #c40000;
 }
 
 

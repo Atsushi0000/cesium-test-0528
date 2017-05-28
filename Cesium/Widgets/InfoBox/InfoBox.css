@@ -11,7 +11,7 @@
     border-right: none;
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
-    box-shadow: 0 0 10px 1px #000;
+    box-shadow: 0 0 10px 1px #c40000;
     -webkit-transform: translate(100%, 0);
     -moz-transform: translate(100%, 0);
     transform: translate(100%, 0);
@@ -27,7 +27,7 @@
     -moz-transform: translate(0, 0);
     transform: translate(0, 0);
     visibility: visible;
-    opacity: 1;
+    opacity: 0;
     -webkit-transition: opacity 0.2s ease-out, -webkit-transform 0.2s ease-out;
     -moz-transition: opacity 0.2s ease-out, -moz-transform 0.2s ease-out;
     transition: opacity 0.2s ease-out, transform 0.2s ease-out;
@@ -37,7 +37,7 @@
     display: block;
     height: 20px;
     padding: 5px 30px 5px 25px;
-    background: rgba(84, 84, 84, 1.0);
+    background: transparent;
     border-top-left-radius: 7px;
     text-align: center;
     text-overflow: ellipsis;
@@ -82,7 +82,7 @@ button.cesium-infoBox-close {
     font-size: 16px;
     padding: 0 5px;
     margin: 0;
-    color: #edffff;
+    color: #c40000;
 }
 
 button.cesium-infoBox-close:focus {
@@ -92,12 +92,12 @@ button.cesium-infoBox-close:focus {
 
 button.cesium-infoBox-close:hover {
     background: #888;
-    color: #000;
+    color: #c40000;
 }
 
 button.cesium-infoBox-close:active {
-    background: #a00;
-    color: #000;
+    background: #0c0a0a;
+    color: #c40000;
 }
 
 .cesium-infoBox-bodyless .cesium-infoBox-iframe {

@@ -8,7 +8,7 @@
 	<meta property="og:image" content="data/hinoshi.png" />
 	<meta property="og:description" content="Cesiumを使った「新世紀エヴァンゲリオン」の世界線" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<title>日野市オープンデータ可視化</title>
+	<title>第3新東京市</title>
 	<link rel="alternate" href="http://hiroshima.archiving.jp/index_en.html" hreflang="en" />
 	<link rel="SHORTCUT ICON" href="http://shinsai.mapping.jp/favicon.ico">
 	<style>
@@ -42,11 +42,6 @@
 	<div id="buttonHelp" class="general-button" onclick="help();">
 		<div class="button-content">
 			<span class="icon-font">help</span>
-		</div>
-	</div>
-	<div id="buttonLayer" class="general-button">
-		<div class="button-content">
-			<span class="icon-font">paramater</span>
 		</div>
 	</div>
 	<div id="buttonGeo" class="general-button" onclick="flyToMyLocation();">
@@ -327,7 +322,7 @@
 				this.overlayObj = _overlayObj;
 				this.id = _id;
 			}
-			overlayDataArray[0] = new overlayData("現在の地図", 100, openStreetMap, "range01");
+			overlayDataArray[0] = new overlayData("現在の地図", 0, openStreetMap, "range01");
 
 			//オーバレイメニューを作成
 

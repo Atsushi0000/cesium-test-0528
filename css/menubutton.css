@@ -23,6 +23,7 @@
     -ms-font-feature-settings: "liga"1, "dlig"1;
     -o-font-feature-settings: "liga"1, "dlig"1;
     font-feature-settings: "liga"1, "dlig"1;
+    color: #c40000;
 }
 
 
@@ -33,7 +34,8 @@
 
 .general-button {
     border-radius: 5px;
-    background-color: #303336;
+    opacity: 0.8;
+    background-color: #0c0a0a;
 }
 
 .general-button:before {
@@ -46,7 +48,7 @@
     border-radius: 0px 0px 5px 5px;
     padding: 2px 4.5px;
     box-shadow: 0px 0px 0px 0px rgba(12, 12, 13, 0);
-    color: #f8f8f8;
+    color: #c40000;
 }
 
 .button-text {
@@ -58,6 +60,7 @@
 .icon-font {
     padding: 0px 4px;
     font-size: 32px;
+    color: #c40000;
 }
 
 
