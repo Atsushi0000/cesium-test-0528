@@ -32,7 +32,7 @@ a:hover {
 /*Cesiumインターフェイス関連*/
 
 .cesium-infoBox-iframe {
-    width: 480px;
+    width: 610px;
     overflow: hidden;
     padding: 0px;
     margin: 0px;
@@ -40,10 +40,11 @@ a:hover {
     background-color: #0c0a0a;
     background: #0c0a0a;
     color: #0c0a0a;
+    fill: #0c0a0a;
 }
 
 .cesium-infoBox {
-    width: 1500px;
+    width: 650px;
     overflow: hidden;
     padding: 0px;
     margin: 0px;
@@ -56,7 +57,7 @@ a:hover {
 }
 
 .cesium-infoBox-visible {
-    width: 1500px;
+    width: 650px;
     overflow: hidden;
     padding: 0px;
     margin: 0px;
@@ -84,10 +85,11 @@ button.cesium-infoBox-close {
     opacity: 0.5;
 }
 
-.cesium-infoBox-bodyless .cesium-infoBox-title {
-  background-color: #0c0a0a;
-  color: #0c0a0a;
+.cesium-infoBox-bodyless {
+  padding: 5px 24px
+  fill: #c40000;
 }
+
 
 
 /*ボタン群*/
