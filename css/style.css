@@ -151,7 +151,7 @@ button.cesium-infoBox-close {
     right: -200px;
     width: 100px;
     opacity: 0.8;
-    padding: 10px 10px 0px 10px;
+    padding: 10px 10px 0px 5px;
     margin: 0px;
     margin-bottom: 0px;
     background: #0c0a0a;
@@ -172,8 +172,8 @@ button.cesium-infoBox-close {
 }
 
 .slideLabel {
-    font-size: 11px;
-    margin: 0px 0px 2px 0px;
+    font-size: 17px;
+    margin: 0px 0px 0px 0px;
     padding: 0px;
     height: 12px;
     color: #c40000;
