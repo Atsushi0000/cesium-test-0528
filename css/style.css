@@ -54,6 +54,7 @@ a:hover {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     background: #0c0a0a;
+
 }
 
 .cesium-infoBox-visible {
@@ -63,7 +64,7 @@ a:hover {
     margin: 0px;
     z-index: 10001;
     overflow-y: auto;
-    opacity: 1;
+    opacity: 0.8;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -151,7 +152,8 @@ button.cesium-infoBox-close {
     position: fixed;
     top: 48px;
     right: -200px;
-    width: 100px;
+    width: 107px;
+    height: 37px;
     opacity: 0.8;
     padding: 10px 10px 0px 5px;
     margin: 0px;
@@ -220,6 +222,7 @@ input {
     padding: 0px;
     width: 100px !important;
     background: #0c0a0a;
+    display: none;
 }
 
 

@@ -168,6 +168,7 @@
 
 .general-button:hover {
     transition-timing-function: ease-in-out;
+    color: #ef0000;
 }
 
 .general-button:hover:before {
